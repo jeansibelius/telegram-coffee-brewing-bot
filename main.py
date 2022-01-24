@@ -194,10 +194,10 @@ class WebhookHandler(webapp2.RequestHandler):
         if text.startswith('/'):
             if text == '/start':
                 reply_keyboard = {'keyboard':[[{'text':"/brew"},{'text':"/stop"}]],'one_time_keyboard':True}
-                sendMessage(msg=("SLURP brew bot enabled. I'm still a work in progress, so be gentle.\nSelect an action below."),reply_keyboard=reply_keyboard,reply_to=True)
+                sendMessage(msg=("Coffee brewing bot enabled. I'm still a work in progress, so be gentle.\nSelect an action below."),reply_keyboard=reply_keyboard,reply_to=True)
                 setEnabled(chat_id, True)
             elif text == '/stop':
-                sendMessage('SLURP brew bot disabled')
+                sendMessage('Coffee brewing bot disabled')
                 setEnabled(chat_id, False)
             elif text == '/brew':
                 sendMessage("Cool, let's brew!")
