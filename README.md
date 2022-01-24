@@ -1,6 +1,6 @@
 # Coffee brewing bot for Telegram
 
-Based on [Telebot](https://github.com/yukuku/telebot)
+Based on [Telebot](https://github.com/yukuku/telebot).  
 Runs on Google App Engine.
 
 ## How to run
